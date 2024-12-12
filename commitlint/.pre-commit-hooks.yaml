@@ -1,5 +1,0 @@
-- id: commitlint
-  name: Commit Lint
-  entry: commitlint
-  language: python
-  stages: [ commit-msg ]

@@ -1,4 +1,0 @@
-additional_commit_types:
-  feat:
-      description: Introduce new features.
-      emoji: ✨
