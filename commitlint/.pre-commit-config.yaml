@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: conventional-commits-check
+        name: Conventional Commits Check
+        entry: conventional-commits-check
+        language: python
+        stages: [commit-msg]
