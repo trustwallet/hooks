@@ -95,6 +95,9 @@ def check_commit_message(commit_message, args):
     commit_types = load_rules()
     additional_commands = load_rules_from_yaml("./commits_check_config.yaml")
     commit_types.update(additional_commands)
+
+    commit_type_keys_list = list(commit_types.keys())
+
     commit_type, props = (None, None)
     for commit_type_for_matching, props in commit_types.items():
         if re.match(
@@ -104,7 +107,7 @@ def check_commit_message(commit_message, args):
             break
 
     if not commit_type:
-        return None, "💥 Commit message does not follow Conventional Commits rules."
+        return None, "💥 Commit message does not follow Conventional Commits rules.\n  Accepted types: " + commit_type_keys_list
 
     emoji = props["emoji"]
 
