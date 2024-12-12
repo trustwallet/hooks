@@ -1,5 +1,5 @@
-- id: conventional-commits-check
-  name: Conventional Commits Check
-  entry: conventional-commits-check
+- id: commitlint
+  name: Commit Lint
+  entry: commitlint
   language: python
-  stages: [commit-msg]
+  stages: [ commit-msg ]

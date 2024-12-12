@@ -17,7 +17,7 @@ setup(
     license="MIT",
     long_description_content_type="text/markdown",
     long_description=README,
-    url="https://github.com/trustwallet/hooks/commitlint",
+    url="https://github.com/trustwallet/hooks/tree/main/commitlint",
     install_requires=["pyyaml==6.0.2"],
     entry_points={
         "console_scripts": [
