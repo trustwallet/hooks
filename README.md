@@ -1,3 +1,4 @@
 ## Setup
 
-1. brew install python-setuptools
+1. run `./setup-hooks.sh` to ensure pre-commit is installed
+
