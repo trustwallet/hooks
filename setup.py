@@ -9,4 +9,7 @@ setup(
             'commitlint = commitlint.main:main',
         ],
     },
+    install_requires=[
+      'pyyaml>=6.0.2',
+    ],
 )
